@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="producto_proveedor.list">
+      <field name="name">producto_proveedor list</field>
+      <field name="model">producto_proveedor.producto_proveedor</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="producto_proveedor.action_window">
+      <field name="name">producto_proveedor window</field>
+      <field name="res_model">producto_proveedor.producto_proveedor</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="producto_proveedor.action_server">
+      <field name="name">producto_proveedor server</field>
+      <field name="model_id" ref="model_producto_proveedor_producto_proveedor"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="producto_proveedor" id="producto_proveedor.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="producto_proveedor.menu_1" parent="producto_proveedor.menu_root"/>
+    <menuitem name="Menu 2" id="producto_proveedor.menu_2" parent="producto_proveedor.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="producto_proveedor.menu_1_list" parent="producto_proveedor.menu_1"
+              action="producto_proveedor.action_window"/>
+    <menuitem name="Server to list" id="producto_proveedor" parent="producto_proveedor.menu_2"
+              action="producto_proveedor.action_server"/>
+    -->
+  </data>
+</odoo>
